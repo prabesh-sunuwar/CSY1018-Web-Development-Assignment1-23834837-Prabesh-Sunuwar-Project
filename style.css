@@ -8,16 +8,93 @@ strong {color: #de5d83;}
 .contactinfo {
     font-size: 20px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    margin-left: 10px;
+    margin-left: 20px;
+  
 }
+.Register{           /* inside contacthtml, head of the page*/
+    margin-left: 2.4%;
+}
+.item1{                              /*footer*/
+    grid-area: footer;
+}
+.grid-container {                      /*footer Email,AddressandPhoneno.*/
+    display: grid;
+    grid-template-areas: 'footer ';   
+    gap: 0px;
+    padding: 1px;
+    margin: -10px;
+   
+  }
 
 
 .fontt{ 
     font-size: 20px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 10px;
-   
+    
+   }
+   .attribute::after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+  label {
+  display: inline-block;
 }
+input[type=text], select, textarea {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #696969;
+    border-radius: 10px;
+    resize: vertical;
+  }
+
+   .column10 {
+    float: left;
+    width: 75%;
+    margin-top: 10px;
+  }
+   
+  .column20{
+    float: left;
+    width: 75%;
+    margin-top: 10px;
+  }
+
+
+  .wrapper{
+    border-radius: 15px;
+    background-color: #f8f8ff;
+    padding: 10px;
+    margin: 10PX;
+  }
+
+
+  .text-box {
+    width: 95%;
+    height: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.submitbut { 
+    background-color: inherit;
+    padding:15px 5%;
+    font-size: 16px;
+    cursor: pointer;
+    color: #ff4500;
+    border:none; 
+ }                                               /* efsefsefsefssfsfsdfs*/
+   .submitbut:hover{background: #778899;
+                    transition: 800ms;}
+.section{ 
+     padding: 1%;}
+
+ @media screen and (max-width: 600px) {
+        .col-35, .col-100, input[type=submit] {
+          width: 100%;
+          margin-top: 0;
+        }
+      }
 .para1 {
     font-size: 20px;
     text-align-last: justify;
@@ -84,27 +161,9 @@ nav ul li a::after{content: '';
 nav ul li a:hover::after {
             width: 100%;}        
             
-.text-box {
-    width: 200px;
-    height: 20px;
-    padding: 10px;
-}
-.submitbut { 
-    background-color: inherit;
-    padding: 14px 28px;
-    font-size: 16px;
-    cursor: pointer;
-    color: #ff4500;
-    border: none;
-    
-   
-   }                                               /* efsefsefsefssfsfsdfs*/
-   .submitbut:hover{background: #778899;
-                    transition: 800ms;}
-.section{ 
-     padding: 1%;}
 
-h1 {margin-left: 10px;}
+
+h1 {margin-left: 20px;} /*contact information*/
 
 img {height: auto;
     width: 200px;
