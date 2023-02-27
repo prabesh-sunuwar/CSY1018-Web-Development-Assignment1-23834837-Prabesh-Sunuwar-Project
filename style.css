@@ -3,29 +3,36 @@ body {
     background-color: #fffff0;
 }
 
-strong {color: #de5d83;}
 
+/* __________________________________________________________________contactpage_____________________________________________ */
 .contactinfo {
     font-size: 20px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 20px;
+    color: #000;
   
 }
 .Register{           /* inside contacthtml, head of the page*/
     margin-left: 2.4%;
 }
-.item1{                              /*footer*/
-    grid-area: footer;
-}
-.grid-container {                      /*footer Email,AddressandPhoneno.*/
-    display: grid;
-    grid-template-areas: 'footer ';   
-    gap: 0px;
-    padding: 1px;
-    margin: -10px;
-   
-  }
+.footer {padding: 72px 0 ;
+         background: #778899;  
+        }
+.footerholder{width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: 50px;
+  color: whitesmoke;
+}       
+.contacthead{font-size: 30px;
+color: whitesmoke;}
 
+.newsletter{position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;} 
+  
 
 .fontt{ 
     font-size: 20px;
@@ -89,12 +96,22 @@ input[type=text], select, textarea {
 .section{ 
      padding: 1%;}
 
+
+
  @media screen and (max-width: 600px) {
         .col-35, .col-100, input[type=submit] {
           width: 100%;
           margin-top: 0;
         }
       }
+
+
+
+
+ /* ____________________________________________________________contactpage____________________________________________   */ 
+
+/*____________________________________________________________indexpage___________________________________________*/
+ strong {color: #de5d83;}   
 .para1 {
     font-size: 20px;
     text-align-last: justify;
@@ -119,7 +136,8 @@ tr:hover {background-color:#8a2be2;}
 nav ul li{
     display: inline-block;
     list-style-type: none;
-    max-width: 10px 20px;
+  
+    margin:5px 20px;
     
     
     
@@ -141,7 +159,10 @@ nav {
     background-color:#778899 ;
     position: sticky;  
     padding: 5px;
-    top: 0;
+    
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     
     
 }
