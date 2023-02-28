@@ -3,36 +3,93 @@ body {
     background-color: #fffff0;
 }
 
-
-/* __________________________________________________________________contactpage_____________________________________________ */
-.contactinfo {
-    font-size: 20px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    margin-left: 20px;
-    color: #000;
+*{
+  
+ 
+  box-sizing: border-box;
   
 }
+/* __________________________________________________________________contactpage_____________________________________________ */
+
+  
+
 .Register{           /* inside contacthtml, head of the page*/
     margin-left: 2.4%;
 }
 .footer {padding: 72px 0 ;
          background: #778899;  
-        }
-.footerholder{width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: 50px;
-  color: whitesmoke;
-}       
-.contacthead{font-size: 30px;
-color: whitesmoke;}
+         width: 100%;
+         color: #fffff0;
+         display: flex;
+         justify-content: center ;
+         flex-wrap: wrap;
+         margin: 0 auto;
+         }
 
-.newsletter{position: relative;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;} 
-  
+
+
+.footerholder{width: 100%;
+             padding: 60px 0 40px 0;
+             margin-right: auto;
+              margin-left: 50px;
+              color: whitesmoke;
+             padding-bottom: 16px;
+             background: #778899; 
+        }       
+        
+.footerheading{
+  display: flex;
+  flex-direction: column;
+  margin: 60px;
+}         
+.footerheading h2{
+  margin-bottom: 30px;
+}
+.footerheading a{
+  color: #f8f8ff;
+  text-decoration:none;
+  margin-bottom: 5px;
+}
+.footerheading a:hover{
+  color: #ff4500;
+  transition: 800ms;
+}
+.newsletter h2 {
+  margin-bottom: 30px;
+}
+#emailfooter{
+  width: 200px;
+  height: 35px;
+  border-radius: 10px;
+  border: none;
+  padding-left: 5px;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+#emailfooterbutton{
+  width: 90px;
+  height: 35px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  font-size: 15px;
+  color: #fffff0;
+  background-color: #d3d3d3;
+}
+#emailfooterbutton:hover{
+  background-color: #000;
+  transition: 800ms;
+}
+
+
+
+
+
+
+
+
+
+
 
 .fontt{ 
     font-size: 20px;
@@ -79,9 +136,11 @@ input[type=text], select, textarea {
 
   .text-box {
     width: 95%;
-    height: 20px;
+    height: 40px;
     padding: 10px;
     border-radius: 10px;
+    
+    outline: none;
 }
 .submitbut { 
     background-color: inherit;
