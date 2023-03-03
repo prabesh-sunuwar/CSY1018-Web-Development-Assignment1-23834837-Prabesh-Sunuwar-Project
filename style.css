@@ -9,27 +9,32 @@ body {
 .wrapper{
     border-radius: 15px;
     background-color: #f8f8ff;
-    padding: 10px;
-    margin: 2px;
-    background: #e6e6fa;
+    padding: 30px 10px;
+    margin-left: 50px;
+    background: #bfe9db;
+    display: flex;
+    margin-right: 50px;
   }
+  
 
 .Register{           /* inside contacthtml, head of the page*/
-    margin-left: 117px;
+    margin-left: -4px;
     padding-bottom: 12px;
 }
 
 
 .fontt{ 
-    font-size: 20px;
+    font-size: large;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 117px;
     letter-spacing: 1px;
+    background-color: #e1f6f4;
+    padding: 20px;
     
    }
 
   .text-box {
-    width: 35%;
+    width: 69%;
     padding: 10px;
     border-radius: 10px;
     outline: none;
@@ -51,7 +56,7 @@ body {
 }
 
 input[type=text], select, textarea {
-  width: 35%;
+  width: 69%;
   padding: 10px;
   border: 1px solid #696969;
   border-radius: 10px;
@@ -88,6 +93,9 @@ input[type=text], select, textarea {
       margin-right: 150px;
       letter-spacing: 3px;
       line-height: 2;
+      font-size: large;
+      margin-left: 32px;
+      
       }
 
 section{display: grid;
@@ -166,7 +174,7 @@ transition: 800ms;
 
 
 
- @media screen and (max-width: 810px) {
+ @media screen and (max-width: 800px) {
         .col-35, .col-100, input[type=submit] {
           width: 100%;
           margin-top: 0;
@@ -246,7 +254,8 @@ nav ul li a:hover::after{
 .headertext h1 {
   font-size: 60px;
   margin-top: 20px;
-  letter-spacing: 1px; }
+  letter-spacing: 1px; 
+  }
   
 .headertext h1 span {
   color: #de5d83;
@@ -301,38 +310,88 @@ text-decoration: underline;}
 .Experience h2 {margin-left: 36px;
 text-decoration: underline;
 }
+/*____________________________________________________________indexpage___________________________________________*/
 
-@media only screen and(max-width: 810px) {
-    nav {
-      display: none;
-    }
-}
 /*--------------------------------------------------------------portfolio page----------------------------------------*/
-
-
-.portfolio-border{
-  border: 1px solid black;
-  height: 370px;
-  width: 400px;
-  margin: 0;
-  padding: 0;
-  margin-left: 30px;
-}
-.placeholderbody{
-  text-align: justify;
-  padding: 10px;
+#portfolioheader{
+  width: 100%;
+  height: 600px;
+  background-image:url(./garrett-sears-rXVFCA3fQ4I-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  overflow-wrap: inherit;
+  
 }
 
-portfolio-border2{
-  display: flex;
-  border: 1px solid black;
-  height: 350px;
-  width: 400px;
-  margin: 0;
-  padding: 0;
+.portfolioheadertext{       /*-----------------------------PORTFOLIOHEADERTEXT STARTS HERE AFTER MAKING THE NAV AND PORFOLIOHEADER------------*/
+  margin-top: 20%;
 
+}
+.portfolioheadertext h1 {                 /*-----------------------Portfolioheadertext 11-------------------------*/
+  font-size: 60px;
+  margin-top: 20px;
+  letter-spacing: 1px; 
+
+  }
+ .portfolioholder{                   /*------------------------------PORTFOLIOHOLDER-----------------*/
+  width: 100%;
+  text-align: center;
+ } 
+ .gallery {                         /*-------------------------gallery is the H1 CLASS FOR Gallery----------------*/
+  margin: 40px;
+  
+ }
+
+.placeholdergallery{                          /*----------------------------------DISPLAY GRID STARTS HEERE TO SEPERATE THE IMAGES INTO COLUMN--------------*/
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  padding: 40px;
+  
+  
+}
+
+
+.scenery{                                       /*-------------------------CONTENT INSIDE DIV CLASS PLACEHOLDERGALLERY-----------------------*/
+  position: relative;
+  box-shadow: #000000;
+  cursor: pointer;
+  
+}
+
+.scenery:hover{                                     /*-------------------------CONTENT INSIDE DIV CLASS PLACEHOLDERGALLERY-----------------------*/
+  background: #778899;
+  transition: 800ms;
+  opacity: 0.4;
 }
 
 
 
+.Canada{                                                    /*-------------------------CONTENT INSIDE DIV CLASS PLACEHOLDERGALLERY-----------------------*/
+  position: relative;
+  box-shadow: #000000;
+  cursor: pointer;
+}
 
+
+.Canada:hover{                                     /*-------------------------CONTENT INSIDE DIV CLASS PLACEHOLDERGALLERY-----------------------*/
+  background: #778899;
+  transition: 800ms;
+  opacity: 0.4;
+}
+
+.family{                                               /*-------------------------CONTENT INSIDE DIV CLASS PLACEHOLDERGALLERY-----------------------*/
+  position: relative;
+  box-shadow: #000000;
+  cursor: pointer;
+}
+.family:hover{                                         /*-------------------------CONTENT INSIDE DIV CLASS PLACEHOLDERGALLERY-----------------------*/
+  background: #778899;
+  transition: 800ms;
+  opacity: 0.4;
+}
+
+
+/*-------------------------------------------------PORTFOLIO PAGE---------------------------------------------------------------------------*/
