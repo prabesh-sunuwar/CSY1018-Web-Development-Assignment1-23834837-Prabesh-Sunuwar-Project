@@ -34,10 +34,11 @@ body {
    }
 
   .text-box {
-    width: 69%;
+    width: 85%;
     padding: 10px;
     border-radius: 10px;
     outline: none;
+    border: none;
 }
                                            
   
@@ -56,11 +57,12 @@ body {
 }
 
 input[type=text], select, textarea {
-  width: 69%;
+  width: 85%;
   padding: 10px;
-  border: 1px solid #696969;
+  border: none;
   border-radius: 10px;
   resize: vertical;
+  outline: none;
 }
 
 .section{ 
@@ -80,7 +82,7 @@ input[type=text], select, textarea {
       color: #ff4500;
       border:none; 
    }
-.submitbut:hover{background: #778899;
+.submitbut:hover{background: #79c2d0;
     transition: 800ms;}  
 
 
@@ -174,7 +176,7 @@ transition: 800ms;
 
 
 
- @media screen and (max-width: 800px) {
+ @media screen and (max-width: 600px) {
         .col-35, .col-100, input[type=submit] {
           width: 100%;
           margin-top: 0;
@@ -196,7 +198,7 @@ transition: 800ms;
   
 
 }
-body{background: #f8f8ff;
+body{
 color: black;
 
 }
@@ -255,6 +257,12 @@ nav ul li a:hover::after{
   font-size: 60px;
   margin-top: 20px;
   letter-spacing: 1px; 
+  animation: fadein 6s;
+  }
+  @keyframes fadein {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    
   }
   
 .headertext h1 span {
@@ -395,3 +403,68 @@ text-decoration: underline;
 
 
 /*-------------------------------------------------PORTFOLIO PAGE---------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------------WORK EXPERIENCE PAGE------------------------------------------------------*/
+.myexperiences{
+  display: grid;
+  justify-content: center;       /* INCLUDES PHOTOGRAPHY 1,2 AND 3*/
+  flex-wrap: wrap;
+  align-items: center;
+  grid-template-columns: auto auto auto;
+  
+  
+}
+
+.myhead{
+  margin: 50px;                        /* THIS IS myhead */
+text-align: center;}
+.myfadedhead{
+  margin: 50px;                            
+  text-align: center;                    /* THIS IS myfadedhead*/
+  color: #9ba6a5;
+}
+
+.Photography1{
+  width: 400px;                  /* INCLUDES PHOTOGRAPHY 1,2 AND 3*/
+  height: 600px;
+  margin: 0 15px;
+  
+
+
+}
+.Photography2{
+  width: 400px;
+  height: 600px;                         /* INCLUDES PHOTOGRAPHY 1,2 AND 3*/
+  margin: 0 15px;
+
+}
+.Photography3{
+  width: 400px;
+  height: 600px;                         /* INCLUDES PHOTOGRAPHY 1,2 AND 3*/
+  margin: 0 15px;
+    
+
+}
+
+.photo1{                            /* ADJUSTMENTS TO photo1*/
+  height: 250px;
+  width: 400px;
+}
+.jobholder{                          /* IT IS A CONTAINER THAT CONTAINS .job, .leapfrog and .OCBC*/
+  margin-top: -180px;
+}
+.job{                                               /* ADJUSTMENTS TO .jobs*/
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  
+}
+.leapfrog{margin-left:50px ;                             /* ADJUSTMENTS TO .leapfrog*/
+  }
+.leapfrog h3 {padding: 5px;}
+
+.OCBC{margin-left: 50px;                                    /* ADJUSTMENTS TO .OCBC*/
+}
+.OCBC h3{padding: 5px;}
