@@ -267,6 +267,10 @@ nav ul li a:hover::after{
   
 .headertext h1 span {
   color: #de5d83;
+  animation:textshadowing 3s infinite;
+}
+@keyframes textshadowing {
+  30% {text-shadow: -1px 3px 5px #f76b8a;}
 }
 /*___________________About me starts from here_________________________*/
 #About{ 
@@ -333,8 +337,17 @@ text-decoration: underline;
 
 .portfolioheadertext{       /*-----------------------------PORTFOLIOHEADERTEXT STARTS HERE AFTER MAKING THE NAV AND PORFOLIOHEADER------------*/
   margin-top: 20%;
+  animation: slidingin 2s ;
 
-}
+}                                       
+@keyframes slidingin {
+  from{
+    margin-left: 95%;
+  }
+  to{
+    margin-left: 0%;
+  }
+  }
 .portfolioheadertext h1 {                 /*-----------------------Portfolioheadertext 11-------------------------*/
   font-size: 60px;
   margin-top: 20px;
@@ -417,7 +430,11 @@ text-decoration: underline;
 
 .myhead{
   margin: 50px;                        /* THIS IS myhead */
-text-align: center;}
+text-align: center;
+animation: textshadowing 3s infinite;}
+@keyframes textshadowing {
+  30% {text-shadow: -1px 3px 5px #113f67;}
+}
 .myfadedhead{
   margin: 50px;                            
   text-align: center;                    /* THIS IS myfadedhead*/
