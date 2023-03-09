@@ -176,7 +176,7 @@ transition: 800ms;
 
 
 
- @media screen and (max-width: 600px) {
+ @media only screen and (max-width: 600px) {
         .col-35, .col-100, input[type=submit] {
           width: 100%;
           margin-top: 0;
@@ -185,9 +185,31 @@ transition: 800ms;
           display: none;
           visibility: hidden;
         }
+        .portfolioheadertext h1{ text-align: center;}
+        .placeholdergallery img {
+          max-width: 100%; 
+        }
+        .portfolioholder .gallery{
+          text-align: center;
+          
+        }
+        .footerheading{
+          margin-top: -30px;
+          text-align: center;
+        }
+       .footer2{
+        margin-left: 60px;
+        text-align: center;
+        }
+      .footer3{
+        text-align: center;
       }
-
-
+      .newsletter{
+        text-align: center;
+      }
+      
+        
+      }
 
 
  /* ____________________________________________________________contactpage____________________________________________   */ 
@@ -202,10 +224,10 @@ body{
 color: black;
 
 }
-#header{
+#headerr{
   width: 100%;
   height: 800px;
-  background-image:url(./samantha-gades-BlIhVfXbi9s-unsplash.jpg);
+  background-image:url(https://zumedia.wpenginepowered.com/wp-content/uploads/2020/09/samantha-gades-BlIhVfXbi9s-unsplash-2048x1367.jpg);
   background-size: cover;
   background-position: center;
   
@@ -228,32 +250,37 @@ nav ul li{
 }
 nav ul li a {
   color: #000000;
-  text-decoration: none ;
-  font-size: 18px;
-  position:relative;
   font-weight: 900;
+  font-size: 18px;
+  text-decoration: none ;
+  position:relative;
+  
   
 }
 nav ul li a::after{
   content: '';
   width: 0;
-  height: 3px;
-  border-radius: 4px;
-  background: #de5d83;
-  position: absolute ;
+  position:relative ;
   left: 0;
   bottom: -6px;
-  transition: 0.5s;
+  transition: 0.6s;
   margin-bottom: 3px;
 }
 nav ul li a:hover::after{
   width:100%
 }
-.headertext{ 
+nav ul li a:hover{
+  background: #de5d83;
+  border-radius: 4px;
+  transition: 1000ms;
+  color: ivory;
+  
+}
+.headerrtext{ 
   margin-top: 20%;
 
 }
-.headertext h1 {
+.headerrtext h1 {
   font-size: 60px;
   margin-top: 20px;
   letter-spacing: 1px; 
@@ -265,7 +292,7 @@ nav ul li a:hover::after{
     
   }
   
-.headertext h1 span {
+.headerrtext h1 span {
   color: #de5d83;
   animation:textshadowing 3s infinite;
 }
@@ -276,11 +303,13 @@ nav ul li a:hover::after{
 #About{ 
   padding:80px 0 ;
   color:black;
-}
-.row{ 
-  display: flex;
+}.row{
+ 
+  display: grid;
   justify-content: space-between;
   flex-wrap: wrap;
+  grid-template-columns: auto auto auto;
+  gap:20px;
 }
 
 .about-column1{
@@ -296,12 +325,12 @@ nav ul li a:hover::after{
 .about-column2{
   flex-basis: 60%;
 }
-.subtitle{
+.title{
   font-size: 60px;
   font-weight: 600;
-  color: #000000;
-  
+  color: #000000; 
 }
+
 .tabs {  margin: 25px 0 0;}
 .tabtitle {display: flex;
 margin-right: 40px;}
@@ -322,9 +351,45 @@ text-decoration: underline;}
 .Experience h2 {margin-left: 36px;
 text-decoration: underline;
 }
+@media only screen and (max-width:600px) {
+  .headerrtext{
+    margin-top: 75%;
+    
+  }
+  .headerrtext h1 {
+    font-size: 45px;
+  }
+  #header{
+    background-image: url(./phonewallper.jpg);
+  }
+ .title{
+  font-size: 30px;
+ }
+ .about-column2{
+ 
+  font-size: 15px;
+ }
+ .about-column1,.about-column2{flex-basis: 95%;
+  
+ }
+.about-column1 img{
+  height: 30%;
+  max-width: auto;
+} 
+.skills h2{ font-size: 15px;}
+.Education h2{font-size: 15px;}
+.Experience h2{font-size: 15px;}
+.skills ul li{ font-size: 12px;}
+.Education ul li{ font-size: 12px;}
+.Experience ul li{ font-size: 12px;}
+}
+
+
+
+
 /*____________________________________________________________indexpage___________________________________________*/
 
-/*--------------------------------------------------------------portfolio page----------------------------------------*/
+/*--------------------------------------------------------------portfoliopage-----------------------------------*/
 #portfolioheader{
   width: 100%;
   height: 600px;
@@ -415,7 +480,7 @@ text-decoration: underline;
 }
 
 
-/*-------------------------------------------------PORTFOLIO PAGE---------------------------------------------------------------------------*/
+/*------------------------------------------------PORTFOLIOPAGE--------------------------------------------*/
 
 /*-------------------------------------------------------------------------WORK EXPERIENCE PAGE------------------------------------------------------*/
 .myexperiences{
@@ -423,7 +488,8 @@ text-decoration: underline;
   justify-content: center;       /* INCLUDES PHOTOGRAPHY 1,2 AND 3*/
   flex-wrap: wrap;
   align-items: center;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin: 0px;
   
   
 }
@@ -445,6 +511,7 @@ animation: textshadowing 3s infinite;}
   width: 400px;                  /* INCLUDES PHOTOGRAPHY 1,2 AND 3*/
   height: 600px;
   margin: 0 15px;
+  text-align: center;
   
 
 
@@ -453,12 +520,14 @@ animation: textshadowing 3s infinite;}
   width: 400px;
   height: 600px;                         /* INCLUDES PHOTOGRAPHY 1,2 AND 3*/
   margin: 0 15px;
+  text-align: center;
 
 }
 .Photography3{
   width: 400px;
   height: 600px;                         /* INCLUDES PHOTOGRAPHY 1,2 AND 3*/
   margin: 0 15px;
+  text-align: center;
     
 
 }
@@ -485,3 +554,24 @@ animation: textshadowing 3s infinite;}
 .OCBC{margin-left: 50px;                                    /* ADJUSTMENTS TO .OCBC*/
 }
 .OCBC h3{padding: 5px;}
+
+@media only screen and (max-width: 600px) {
+  .myexperiences{
+    margin-left: -14px;
+  }
+  .myhead{margin-top: -100px;
+  text-align: center;}
+  .myfadedhead{text-align: justify;}
+  .Photography2{margin-top: -250px;}
+  .Photography3{margin-top: -250px;}
+  .leapfrog{
+    text-align: center;
+    margin-left: 10px;}
+    .OCBC{margin-left: 10px;}
+    .job{margin-top: -100px;}
+ .photo1{
+  height: 250px;
+  width: 350px;
+ }
+  
+}
