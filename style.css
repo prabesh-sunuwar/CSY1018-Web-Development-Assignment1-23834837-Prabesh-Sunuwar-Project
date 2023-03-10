@@ -4,105 +4,84 @@ body {
     box-sizing: border-box;
 }
 /* __________________________________________________________________contactpage_____________________________________________ */
-
-
-.wrapper{
-    border-radius: 15px;
-    background-color: #f8f8ff;
-    padding: 30px 10px;
-    margin-left: 50px;
-    background: #bfe9db;
-    display: flex;
-    margin-right: 50px;
-  }
-  
-
-.Register{           /* inside contacthtml, head of the page*/
-    margin-left: -4px;
-    padding-bottom: 12px;
+section{
+  padding: 50px 20%;
 }
-
-
-.fontt{ 
-    font-size: large;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    margin-left: 117px;
-    letter-spacing: 1px;
-    background-color: #e1f6f4;
-    padding: 20px;
-    
-   }
-
-  .text-box {
-    width: 85%;
-    padding: 10px;
-    border-radius: 10px;
-    outline: none;
-    border: none;
+.Register-form h1{
+  font-size: 50px;
+  margin-bottom: 15px;
 }
-                                           
-  
-                                               
-.column20{
-  float: left;
-  width: 75%;
-  margin-top: 10px;
+.Register-form p{
+  letter-spacing: 1px;
+  font-size: 20px;
+  margin-bottom: 40px;
+  line-height: 22px;
 }
-
-
-.column10 {
-  float: left;
-  width: 75%;
-  margin-top: 10px;
+.Register-form form{
+  position: relative;
 }
-
-input[type=text], select, textarea {
-  width: 85%;
-  padding: 10px;
+.Register-form form input,
+form textarea{
   border: none;
-  border-radius: 10px;
-  resize: vertical;
   outline: none;
+  padding:20px;
+  width: 100%;
+  background: #f8f8ff;
+  font-size: 20px;
+  color: #233142;
+  margin-bottom: 10px;
+  border-radius: 50px;
+}
+.Register-form form .Sendbut{
+  width: 200px;
+  height: 50px;
+  display: inline-block;
+  font-size: 20px;
+  letter-spacing: 2px;
+  background: #e8630a;
+  font-weight: bolder;
+  border-radius:50px ;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #f8f8ff;
+}
+.Register-form form .Sendbut:hover{
+  background: #2772db;
+  color: #222831;
+  transition: 900ms;
+  border: 2px solid #7c73e6;
 }
 
-.section{ 
-     padding: 1%;}
-
-
-.attribute::after{
-      content: "";
-      display: table;
-      clear: both;
+@media only screen and (max-width: 600px){
+    section{
+      padding: 80px 3.5%;
     }
-.submitbut { 
-      background-color: inherit;
-      padding:15px 5%;
-      font-size: 16px;
-      cursor: pointer;
-      color: #ff4500;
-      border:none; 
-   }
-.submitbut:hover{background: #79c2d0;
-    transition: 800ms;}  
+    .Register-form form input,
+    form textarea{
+      width: 91%;
+    }
+    .Register-form h1{
+      font-size: 65px;
+      margin-left: 13px;
+    }
+    .Register-form p{
+      margin-bottom: 40px;
+      margin-left: 13px;
+    }
+    .Contact-Webpage{
+      margin-top: -145px;
+    }
 
-
-
-
-
-
-.contactinfoflex{ 
-      margin-bottom: 10px;
-      margin-right: 150px;
-      letter-spacing: 3px;
-      line-height: 2;
-      font-size: large;
-      margin-left: 32px;
-      
-      }
-
-section{display: grid;
-grid-template-columns: auto auto;
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -177,10 +156,7 @@ transition: 800ms;
 
 
  @media only screen and (max-width: 600px) {
-        .col-35, .col-100, input[type=submit] {
-          width: 100%;
-          margin-top: 0;
-        }
+        
         nav {
           display: none;
           visibility: hidden;
