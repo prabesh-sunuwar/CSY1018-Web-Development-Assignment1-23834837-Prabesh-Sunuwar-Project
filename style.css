@@ -7,6 +7,7 @@ body {
 section{
   padding: 50px 20%;
 }
+
 .Register-form h1{
   font-size: 50px;
   margin-bottom: 15px;
@@ -158,30 +159,30 @@ transition: 800ms;
  @media only screen and (max-width: 600px) {
         
         nav {
-          display: none;
+          display: none;         /*FOR NAV BAR*/
           visibility: hidden;
         }
-        .portfolioheadertext h1{ text-align: center;}
+        .portfolioheadertext h1{ text-align: center;}      /*PORFOLIOPAGE*/
         .placeholdergallery img {
-          max-width: 100%; 
+          max-width: 100%; /*PORFOLIOPAGE*/
         }
-        .portfolioholder .gallery{
+        .portfolioholder .gallery{/*PORFOLIOPAGE*/
           text-align: center;
           
         }
-        .footerheading{
+        .footerheading{                    /*FOOTER*/
           margin-top: -30px;
           text-align: center;
         }
        .footer2{
-        margin-left: 60px;
+        margin-left: 60px;                     /*FOOTER*/
         text-align: center;
         }
       .footer3{
-        text-align: center;
+        text-align: center;                        /*FOOTER*/
       }
       .newsletter{
-        text-align: center;
+        text-align: center; /*FOOTER*/
       }
       
         
@@ -193,7 +194,7 @@ transition: 800ms;
 /*____________________________________________________________indexpage___________________________________________*/
 *{
   margin:0;
-  
+ 
 
 }
 body{
@@ -207,58 +208,51 @@ color: black;
   background-size: cover;
   background-position: center;
   
-  overflow-wrap: inherit;
+  
 }
-.box{
-  padding: 10px 10%;
+.box{                /*CONTAINER*/
+  padding: 20px 11%;
   
 }
 nav{
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
+ 
+  
 }
 nav ul li{
   display: inline-block;
   list-style: none;
-  margin: 10px 20px;
+  margin: 10px 30px;
 }
 nav ul li a {
   color: #000000;
   font-weight: 900;
   font-size: 18px;
   text-decoration: none ;
-  position:relative;
   
   
+  
 }
-nav ul li a::after{
-  content: '';
-  width: 0;
-  position:relative ;
-  left: 0;
-  bottom: -6px;
-  transition: 0.6s;
-  margin-bottom: 3px;
-}
-nav ul li a:hover::after{
-  width:100%
-}
+
 nav ul li a:hover{
   background: #de5d83;
   border-radius: 4px;
-  transition: 1000ms;
+  transition: 400ms;
   color: ivory;
+ 
   
 }
 .headerrtext{ 
   margin-top: 20%;
+ 
 
 }
 .headerrtext h1 {
-  font-size: 60px;
-  margin-top: 20px;
+  font-size: 58px;
+  margin-top: 30px;
   letter-spacing: 1px; 
   animation: fadein 6s;
   }
@@ -276,30 +270,32 @@ nav ul li a:hover{
   30% {text-shadow: -1px 3px 5px #f76b8a;}
 }
 /*___________________About me starts from here_________________________*/
-#About{ 
-  padding:80px 0 ;
+#Aboutme{ 
+  padding:70px 0 ;
   color:black;
 }.row{
  
-  display: grid;
+  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  grid-template-columns: auto auto auto;
-  gap:20px;
+  
+  
 }
 
 .about-column1{
-  flex-basis:35%;
+  flex-basis:30%;
+  
 
 }
 .about-column1 img{
  
   border-radius: 10px;
-  height: 350px;
+  height: 400px;
   width: auto;
 }
 .about-column2{
   flex-basis: 60%;
+  
 }
 .title{
   font-size: 60px;
@@ -312,11 +308,11 @@ nav ul li a:hover{
 margin-right: 40px;}
 .skills ul li {margin: 10px 0 0 10px;}  
 
-.Education ul li span{color:	#ff4500;}     /*proud of what i did*/
+.Education ul li span{color:	#ff4500;}     
 .Education ul li {margin: 10px 0 0 10px;}
 
 .Experience ul li {margin: 10px 0 0 10px;}
-.Experience ul li span{color:	#ff4500;}          /*proud of what i did*/
+.Experience ul li span{color:	#ff4500;}        
    
 
 
@@ -329,7 +325,7 @@ text-decoration: underline;
 }
 @media only screen and (max-width:600px) {
   .headerrtext{
-    margin-top: 75%;
+    margin-top: 95%;
     
   }
   .headerrtext h1 {
@@ -339,20 +335,40 @@ text-decoration: underline;
     background-image: url(./phonewallper.jpg);
   }
  .title{
-  font-size: 30px;
+  font-size: 35px;
  }
- .about-column2{
- 
+ .title{
+ text-align: center;
+ }
+ .aboutme-p{ 
+  text-align: justify;
   font-size: 15px;
  }
- .about-column1,.about-column2{flex-basis: 95%;
-  
+ 
+ .about-column2{
+ flex-basis: 90%;
+  font-size: 10px;
+  margin-left: -20px;
+ }
+ .about-column1{
+  flex-basis: 90%;
+  margin-bottom: -550px;
  }
 .about-column1 img{
-  height: 30%;
+  height: 40%;
   max-width: auto;
+  margin-left: 0px;
 } 
 .skills h2{ font-size: 15px;}
+.skills{
+  margin-right:-30px;
+}
+.Education{
+  margin-right: -30px;
+}
+.Experience{
+  margin-right: -30px;
+}
 .Education h2{font-size: 15px;}
 .Experience h2{font-size: 15px;}
 .skills ul li{ font-size: 12px;}
