@@ -567,3 +567,11 @@ animation: textshadowing 3s infinite;}
  }
   
 }
+/*SITEREPORT.HTML*/
+.report-container{
+  margin-inline:auto ;
+  border: 2px solid #233142;
+  width: min(70%,2000px);
+  justify-content: center;
+  text-align: justify;
+}
