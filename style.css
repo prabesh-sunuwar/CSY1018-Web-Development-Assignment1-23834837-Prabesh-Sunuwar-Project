@@ -1,11 +1,11 @@
 body {
-    margin: 0;
-    background-color: #fffff0;
+  margin: 0;
+  background-color: #fffff0;
     box-sizing: border-box;
 }
 /* __________________________________________________________________contactpage_____________________________________________ */
 section{
-  padding: 50px 20%;
+  padding: 60px 20%;
 }
 
 .Register-form h1{
@@ -356,7 +356,7 @@ text-decoration: underline;
  }
 .about-column1 img{
   height: 40%;
-  max-width: auto;
+ 
   margin-left: 0px;
 } 
 .skills h2{ font-size: 15px;}
@@ -434,7 +434,7 @@ text-decoration: underline;
 
 .scenery{                                       /*-------------------------CONTENT INSIDE DIV CLASS PLACEHOLDERGALLERY-----------------------*/
   position: relative;
-  box-shadow: #000000;
+  box-shadow:5px 5px ivory;
   cursor: pointer;
   
 }
@@ -449,7 +449,7 @@ text-decoration: underline;
 
 .Canada{                                                    /*-------------------------CONTENT INSIDE DIV CLASS PLACEHOLDERGALLERY-----------------------*/
   position: relative;
-  box-shadow: #000000;
+  box-shadow:5px 5px ivory ;
   cursor: pointer;
 }
 
@@ -462,7 +462,7 @@ text-decoration: underline;
 
 .family{                                               /*-------------------------CONTENT INSIDE DIV CLASS PLACEHOLDERGALLERY-----------------------*/
   position: relative;
-  box-shadow: #000000;
+  box-shadow: 5px 5px ivory;
   cursor: pointer;
 }
 .family:hover{                                         /*-------------------------CONTENT INSIDE DIV CLASS PLACEHOLDERGALLERY-----------------------*/
@@ -570,7 +570,7 @@ animation: textshadowing 3s infinite;}
 /*SITEREPORT.HTML*/
 .report-container{
   margin-inline:auto ;
-  border: 2px solid #233142;
+ 
   width: min(70%,2000px);
   justify-content: center;
   text-align: justify;
