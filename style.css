@@ -570,8 +570,41 @@ animation: textshadowing 3s infinite;}
 /*SITEREPORT.HTML*/
 .report-container{
   margin-inline:auto ;
- 
   width: min(70%,2000px);
   justify-content: center;
   text-align: justify;
 }
+.report-gallery{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px.1fr));
+  gap: 20px;
+
+}
+.report-gallery h1{
+  text-align: center;
+  text-decoration: underline;
+ 
+}
+.screenshot img{
+  width: min(70%,4000px);
+  border: 1px solid #000;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+  margin: auto 170px;
+}
+@media only screen and (max-width: 600px) {
+  .report-gallery { 
+    align-items: center;
+   }
+   .screenshot img{
+    grid-template-columns: auto;
+   margin-left: 40px;
+   
+   }
+   .report-container{
+    margin-top: -120px;
+   }
+  
+   }
+
