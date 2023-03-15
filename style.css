@@ -71,7 +71,7 @@ form textarea{
       margin-left: 13px;
     }
     .Contact-Webpage{
-      margin-top: -145px;
+      margin-top: -90px;
     }
 
 }
@@ -158,10 +158,7 @@ transition: 800ms;
 
  @media only screen and (max-width: 600px) {
         
-        nav {
-          display: none;         /*FOR NAV BAR*/
-          visibility: hidden;
-        }
+        
         .portfolioheadertext h1{ text-align: center;}      /*PORFOLIOPAGE*/
         .placeholdergallery img {
           max-width: 100%; /*PORFOLIOPAGE*/
@@ -323,6 +320,9 @@ text-decoration: underline;}
 .Experience h2 {margin-left: 36px;
 text-decoration: underline;
 }
+nav .fas{
+  display: none;
+}
 @media only screen and (max-width:600px) {
   .headerrtext{
     margin-top: 95%;
@@ -374,6 +374,38 @@ text-decoration: underline;
 .skills ul li{ font-size: 12px;}
 .Education ul li{ font-size: 12px;}
 .Experience ul li{ font-size: 12px;}
+
+nav .fas{
+  display: block;
+  font-size: 30px;
+  float: left;
+
+  
+}
+nav ul{
+  background:#778899 ;
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 250px;
+  height: 95vh;
+  padding-top: 60px;
+  z-index: 3;
+  transition:left 700ms ;
+
+  
+}
+nav ul li {
+  display: block;
+  margin: 50px;
+}
+nav ul .fas{
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  cursor: pointer;
+
+}
 }
 
 
@@ -551,7 +583,7 @@ animation: textshadowing 3s infinite;}
   .myexperiences{
     margin-left: -14px;
   }
-  .myhead{margin-top: -100px;
+  .myhead{margin-top: -10px;
   text-align: center;}
   .myfadedhead{text-align: justify;}
   .Photography2{margin-top: -250px;}
@@ -580,6 +612,7 @@ animation: textshadowing 3s infinite;}
   gap: 20px;
 
 }
+
 .report-gallery h1{
   text-align: center;
   text-decoration: underline;
@@ -603,8 +636,9 @@ animation: textshadowing 3s infinite;}
    
    }
    .report-container{
-    margin-top: -120px;
+    margin-top: -10px;
    }
   
    }
+   /*SITEREPORT.HTML*/
 

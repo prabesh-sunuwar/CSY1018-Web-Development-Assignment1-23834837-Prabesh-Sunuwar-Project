@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>sitereport</title>
         <link rel="stylesheet" href="style.css" ><!---------------------------------Icon made by Freepik from www.flaticon.com for my favicon---------------------------->
         <link rel="icon" type="image/png" href="./webpage.png" >
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
        
     </head>
    <body>
@@ -12,21 +15,22 @@
         <div class="box">
             
           <nav>
-            <ul>
+            <ul id="mobilemenu">
               <li><a href="index.html">Home</a></li>
               <li><a href="portfolio.html">Portfolio </a></li>
               <li><a href="contact.html">Contact</a></li>
               <li><a href="workexperience.html">Work Experience</a></li>
               <li><a href="sitereport.html">Site report</a></li>
-              
+              <i class="fas fa-times" onclick="closemenu()"></i>
             </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
           </nav>
             
           </div>
           <div class="report-container">
           <h1>Report</h1>
           <h3>14 March 2023</h3>
-          <p>Throughout this assignment. Lecturer Chirag Thapa, peers and sources have given me ideas on how to start coding for our website. This is the first time I took this course so much help and so much help was needed. After planning out in my head what to do and where it should be I started to code right away. According to me, the HTML was simple but to beautify the HTML using CSS was challenging because there were vast of things you could do depending on your skill Level. Also, I found it hard to make a page responsive and make a hamburger menu using only CSS since java script was not allowed. (Horn, 2019) (Freepik, 2010) (AS, 1998). </p><br>
+          <p>Throughout this assignment. Lecturer Chirag Thapa, peers and sources have given me ideas on how to start coding for our website. This is the first time I took this course so much help and so much help was needed. After planning out in my head what to do and where it should be I started to code right away. According to me, the HTML was simple but to beautify the HTML using CSS was challenging because there were vast of things you could do depending on your skill Level. Also, I found it hard to make a page responsive and make a hamburger menu using Javascript.Using only Css wouldn't work.(turtorials, 2022) (Horn, 2019) (Freepik, 2010) (AS, 1998). </p><br>
            <p> Overall, this project assignment taught me to be patient and resilient because good things come in one's way. When one keeps on facing the problems, one will soon learn how to tackle the problem. Important portions of HTML and CSS were taught in classes due to the time constraint of our schedule. This means that we had to do the rest of the homework ourselves. I give my all in this assignment while I have not found time to study on the other modules. I will have to carefully plan out my time for the next semester when it comes. Web pages with animations and good landscape pictures are very pleasing to my eyes because these are the first few things you notice. I found this project assignment overwhelming, yes, I managed to finish my assignment on time. However, I also feel underwhelmed by the fact that I finished it fast and the thought of failing to meet the marker’s criteria. I do not know how the marker will mark but I will trust the process. I will improve anytime.</p><br>
            <p> So, I went with the suitable color pleasing to the eye for all my pages. I make sure that users using the website do not have a challenging time looking at the fonts or background colors. I used black color for fonts, ivory for background color, which is not too white, but it is in a white color group, dark orange to highlight the number to express the others that I have the youthfulness and freshness in me. It makes one engage in activities and talk with people. </p><br>
           
@@ -119,5 +123,17 @@
         </div>
     </div>
 
+
+
+    <script>
+      var mobilemenu = document.getElementById("mobilemenu");
+      function openmenu(){
+        mobilemenu.style.left="0"
+      }
+      function closemenu(){
+        mobilemenu.style.left="-300px"
+      }
+
+    </script>
    </body>
 </html>

@@ -1,12 +1,13 @@
 <!DOCTYPE html> <!--Doctype html starts from here-->
-<html>
+<html lang="en">
     <head> <!--Head starts here-->
         <title>index</title>
         <link rel="stylesheet" href="style.css"  >
         <link rel="icon" type="image/png" href="./webpage.png" >  <!--Icon made by Freepik from www.flaticon.com for my favicon-->
-        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
        
     </head>
    <body>
@@ -15,14 +16,16 @@
         <div class="box">
 
           <nav>
-            <ul>
+            
+            <ul id="mobilemenu">
               <li><a href="index.html">Home</a></li>
               <li><a href="portfolio.html">Portfolio </a></li>
               <li><a href="contact.html">Contact</a></li>
               <li><a href="workexperience.html">Work Experience</a></li>
               <li><a href="sitereport.html">Site report</a></li>
-              
+              <i class="fas fa-times" onclick="closemenu()"></i>
             </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
           </nav>
           <div class="headerrtext">
             <h1>Hello! I'm <span>Prabesh</span><br> Sunuwar from Nepal</h1>
@@ -108,6 +111,17 @@
             </div>
         </div>
     </div>
+    <script>
+      var mobilemenu = document.getElementById("mobilemenu");
+      function openmenu(){
+        mobilemenu.style.left="0"
+      }
+      function closemenu(){
+        mobilemenu.style.left="-300px"
+      }
+
+    </script>
+    
 
 
    </body> <!--End of body -->
