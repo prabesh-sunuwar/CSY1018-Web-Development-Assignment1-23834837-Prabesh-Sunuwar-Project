@@ -76,17 +76,6 @@ form textarea{
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
      
      /*Footer starts here*/
 .footer {padding: 72px 0 ;
@@ -599,12 +588,18 @@ animation: textshadowing 3s infinite;}
  }
   
 }
+/*-------------------------------------------------------------------------WORK EXPERIENCE PAGE------------------------------------------------------*/
+
+
+
+
 /*SITEREPORT.HTML*/
 .report-container{
   margin-inline:auto ;
   width: min(70%,2000px);
   justify-content: center;
   text-align: justify;
+ 
 }
 .report-gallery{
   display: grid;
@@ -616,6 +611,7 @@ animation: textshadowing 3s infinite;}
 .report-gallery h1{
   text-align: center;
   text-decoration: underline;
+ 
  
 }
 .screenshot img{
